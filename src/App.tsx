@@ -1,6 +1,7 @@
 import NavigationBar from './components/NavigationBar'
 import About from './components/About'
 import Profile from './components/Profile'
+import Skills from './components/Skills';
 
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <NavigationBar />
 			<Profile />
       <About></About>
+			<Skills />
     </>
   );
 }
