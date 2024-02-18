@@ -26,7 +26,11 @@ const Skills: React.FC = () => {
 	const skills: SkillTexts[] = [
 		{
 			title: 'Language',
-			content: 'Go / Python / Java / Node.js'
+			content: 'Go / Python / Java / TypeScript'
+		},
+		{
+			title: 'Frameworks',
+			content: 'Node.js / React',
 		},
 		{
 			title: 'Infras',
