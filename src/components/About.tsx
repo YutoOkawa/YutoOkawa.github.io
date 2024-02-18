@@ -4,8 +4,7 @@ import Typography from '@mui/material/Typography';
 
 function About() {
   return (
-		// TODO: h5 をもう少し工夫したい
-		// TODO: body1 にある要素を１つずつブロック的に区切りたい
+		// TODO: About のコンテンツを変数定義して、値を渡して書き出せるようにしたい
   	<>
 			<Container maxWidth="xl">
 				<Box p={2}>
