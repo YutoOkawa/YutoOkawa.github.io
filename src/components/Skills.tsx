@@ -1,26 +1,5 @@
-import { Box, Card, CardContent, Container, Grid, Typography } from "@mui/material";
-
-type SkillTexts = {
-	title: string
-	content: string
-}
-
-const SkillContent: React.FC<{skill: SkillTexts}> = ( {skill} ) => {
-	return (
-		<Grid item>
-			<Card sx={{ maxWidth: '100%' }} >
-				<CardContent>
-					<Typography sx={{ fontSize: 14 }} color={'text.Secondary'} gutterBottom>
-						{skill.title}
-					</Typography>
-					<Typography variant="h6">
-						{skill.content}
-					</Typography>
-				</CardContent>
-			</Card>
-		</Grid>
-	);
-}
+import { Box, Container, Grid, Typography } from "@mui/material";
+import { SkillContent, SkillTexts } from "./SkillContent";
 
 const Skills: React.FC = () => {
 	const skills: SkillTexts[] = [
