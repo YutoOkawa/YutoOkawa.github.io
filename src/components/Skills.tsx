@@ -13,8 +13,12 @@ const Skills: React.FC = () => {
 		},
 		{
 			title: 'Infras',
-			content: 'Docker / Kubernetes'
+			content: 'Linux / Docker / Kubernetes'
 		},
+		{
+			title: 'Technology',
+			content: 'FIDO / WebAuthn / Cryptography',
+		}
 	]
 	return (
 		<>
