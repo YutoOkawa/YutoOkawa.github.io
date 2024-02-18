@@ -8,7 +8,7 @@ function App() {
     <>
       <NavigationBar />
 			<Profile />
-      <About></About>
+      <About />
 			<Skills />
     </>
   );
