@@ -7,7 +7,7 @@ type SkillTexts = {
 
 const SkillContent: React.FC<{skill: SkillTexts}> = ( {skill} ) => {
 	return (
-		<Grid item xs={3}>
+		<Grid item>
 			<Card sx={{ maxWidth: '100%' }} >
 				<CardContent>
 					<Typography sx={{ fontSize: 14 }} color={'text.Secondary'} gutterBottom>
@@ -47,7 +47,7 @@ const Skills: React.FC = () => {
 						</Typography>
 					</Box>
 					<Box display={'flex'} justifyContent={'left'} p={1}>
-						<Grid container spacing={{ xs: 2, md: 3 }} columns={{ xs: 4, sm: 8, md: 12 }} justifyContent={'left'}>
+						<Grid container spacing={3} justifyContent={'left'}>
 							{skills.map((skill) => (
 								<SkillContent skill={skill}></SkillContent>
 							))}
