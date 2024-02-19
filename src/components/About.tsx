@@ -19,7 +19,6 @@ const About: React.FC = () => {
 		}
 	]
   return (
-		// TODO: 改行をできるようにする
   	<>
 			<Container maxWidth="xl">
 				<Box p={2}>
@@ -27,17 +26,12 @@ const About: React.FC = () => {
 						<Typography variant='h5'>
 							About
 						</Typography>
-					</Box>	
-					<Box display={'flex'} justifyContent={'left'} p={1}>
-						{abouts.map((about) => (
-							<AboutContent about={about}></AboutContent>
-						))}
-						{/* <Typography variant='body1' align='left'>
-							Name: Yuto Okawa <br />
-							Job: Security Engineer <br />
-							Like: Golang / FIDO
-						</Typography> */}
 					</Box>
+					{abouts.map((about) => (
+						<Box display={'flex'} justifyContent={'left'} p={1}>
+							<AboutContent about={about}></AboutContent>
+						</Box>
+					))}
 				</Box>
 			</Container>
     </>

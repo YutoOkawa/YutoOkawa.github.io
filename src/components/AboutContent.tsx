@@ -7,8 +7,8 @@ export type AboutText = {
 
 export const AboutContent: React.FC<{about: AboutText}> = ( {about} ) => {
   return (
-    <Typography variant="button" align="left">
+    <Typography variant="body1" align="left">
       {about.title}: {about.content}
-    </Typography>   
+    </Typography>
   );
 }
