@@ -16,9 +16,14 @@ const About: React.FC = () => {
 		{
 			title: 'Like',
 			content: 'Golang / FIDO'
+		},
+		{
+			title: 'Hobby',
+			content: 'Coffee / Social-network game'
 		}
 	]
   return (
+		// TOOD: title と content の間の空白をいい感じにしたい
   	<>
 			<Container maxWidth="xl">
 				<Box p={2}>
