@@ -2,6 +2,7 @@ import NavigationBar from './components/NavigationBar'
 import About from './components/About'
 import Profile from './components/Profile'
 import Skills from './components/Skills';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
 			<Profile />
       <About />
 			<Skills />
+      <Contact />
     </>
   );
 }
