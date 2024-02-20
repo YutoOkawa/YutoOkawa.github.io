@@ -14,10 +14,6 @@ const About: React.FC = () => {
 			content: 'Inhouse Security Engineer'
 		},
 		{
-			title: 'Like',
-			content: 'Golang / FIDO'
-		},
-		{
 			title: 'Hobby',
 			content: 'Coffee / Social-network game'
 		}
