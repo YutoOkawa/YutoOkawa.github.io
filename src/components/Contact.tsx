@@ -4,7 +4,6 @@ import PermIdentityIcon from '@mui/icons-material/PermIdentity';
 import { Box, Container, Typography } from '@mui/material';
 
 const Contact: React.FC = () => {
-  // TODO: X/Github/Email/BlueSky のリンク追加
   return (
     <>
       <Container maxWidth="xl">
