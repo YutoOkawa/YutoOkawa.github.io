@@ -32,7 +32,6 @@ function ResponsiveAppBar() {
     <AppBar position="static" color='error'>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
-          <LockOpenIcon sx={{ display: { xs: 'none', md: 'flex' }, mr: 1 }} />
           <Typography
             variant="h6"
             noWrap
