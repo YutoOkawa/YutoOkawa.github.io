@@ -9,9 +9,15 @@ function App() {
     <>
       <NavigationBar />
 			<Profile />
-      <About />
-			<Skills />
-      <Contact />
+      <section id='about'>
+        <About />
+      </section>
+      <section id='skills'>
+        <Skills />
+      </section>
+      <section id='contact'>
+        <Contact />
+      </section>
     </>
   );
 }

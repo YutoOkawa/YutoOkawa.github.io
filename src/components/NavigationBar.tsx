@@ -10,8 +10,13 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 import LockOpenIcon from '@mui/icons-material/LockOpen';
+import AnchorLink from 'react-anchor-link-smooth-scroll';
 
 const pages = ['About', 'Skills', 'Contact'];
+const pagemap = new Map<string, string>();
+pages.forEach((page) => {
+  pagemap.set(page, '#'+page.toLocaleLowerCase())
+})
 
 function ResponsiveAppBar() {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -76,9 +81,11 @@ function ResponsiveAppBar() {
               }}
             >
               {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
-                </MenuItem>
+                <AnchorLink href={pagemap.get(page)} style={{textDecoration: 'none', color: 'inherit'}}>
+                  <MenuItem key={page} onClick={handleCloseNavMenu}>
+                    <Typography textAlign="center">{page}</Typography>
+                  </MenuItem>
+                </AnchorLink>
               ))}
             </Menu>
           </Box>
@@ -103,13 +110,15 @@ function ResponsiveAppBar() {
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'white', display: 'block' }}
-              >
-                {page}
-              </Button>
+              <AnchorLink href={pagemap.get(page)} style={{textDecoration: 'none', color: 'inherit'}}>
+                <Button
+                  key={page}
+                  onClick={handleCloseNavMenu}
+                  sx={{ my: 2, color: 'white', display: 'block' }}
+                >
+                  {page}
+                </Button>
+              </AnchorLink>
             ))}
           </Box>
         </Toolbar>
