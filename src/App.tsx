@@ -3,6 +3,7 @@ import About from './components/About'
 import Profile from './components/Profile'
 import Skills from './components/Skills';
 import Contact from './components/Contact';
+import ScrollUp from './components/ScrollUp';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <section id='contact'>
         <Contact />
       </section>
+      <ScrollUp />
     </>
   );
 }
