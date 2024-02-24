@@ -8,8 +8,8 @@ function Profile() {
 					<Box display={'flex'} justifyContent={'left'} p={1}>
 						<Avatar 
 						  alt="my-avatar"
-							src="/images/IMG_2535.JPG" // TODO: 画像が見えるように
-							sx={{width:100, height:100}} // TODO: リサイズ
+							src="/images/IMG_2535.JPG"
+							sx={{width:175, height:175}}
 						/>
 					</Box>
 					<Box display={'flex'} justifyContent={'left'} p={1}>
