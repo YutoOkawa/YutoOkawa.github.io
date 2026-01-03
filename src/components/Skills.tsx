@@ -17,7 +17,7 @@ const Skills: React.FC = () => {
 		},
 		{
 			title: 'Technology',
-			content: 'FIDO / WebAuthn / Cryptography',
+			content: 'FIDO / PassKey / Cryptography',
 		}
 	]
 	return (
